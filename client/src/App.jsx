@@ -21,7 +21,8 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Need a plumber without hair?</h1><h1>Preston will be right there!</h1>
+          <h1>Need a plumber without hair?</h1>
+          <h1>Preston Davies will be right there!</h1>
         </div>
         <button
           className="counter"
