@@ -48,67 +48,46 @@ function App() {
             </li>
           </ul>
         </div>
-        <div id="social">
+        <div id="quote">
+          <h2>Book a Free Quote</h2>
+          <div id="quote-form">
+            <div className="quote-row">
+              <label>Name: </label>
+              <input type='text' />
+            </div>
+            <div className="quote-row">
+              <label>Email: </label>
+              <input type='email' />
+            </div>
+            <div className="quote-row">
+              <label>Issue: </label>
+              <textarea rows={4}></textarea>
+            </div>
+          </div>
+          <div id="quote-submit"><button>Submit</button></div>
+        </div>
+
+      </section>
+
+      <section id="next-steps">
+        <div id="reviews">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
+          <h2>Reviews</h2>
+          <p>See what your neighbours are saying!</p>
+          <div className='review'>
+            <h4>Jonathon</h4>
+            <p>"Preston was great! He knew exactly what was wrong with my toilet, and fixed it right away. 10/10"</p>
+          </div>
+          <div className='review'>
+            <h4>Melissa</h4>
+            <p>"He's alright I guess."</p>
+          </div>
+        </div>  
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section></section>
     </>
   )
 }
