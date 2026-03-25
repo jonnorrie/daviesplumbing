@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 24px;
-  background: var(--accent-bg);
-  border-bottom: 1px solid var(--border);
+  padding: 10px 25px;
+  background: #dce9f7;
+  border-bottom: 1px solid #b8cce8;
   font-size: 14px;
-  color: var(--accent);
+  color: #1d5cba;
 
   @media (max-width: 1024px) {
     padding: 8px 16px;
@@ -181,19 +181,20 @@
 }
 
 #quote-submit button {
-  color: var(--text-h);
+  color: #fff;
   font-size: 16px;
   border-radius: 6px;
-  background: var(--social-bg);
+  background: #1d5cba;
   display: flex;
-  padding: 6px 12px;
+  padding: 6px 18px;
   align-items: center;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: box-shadow 0.3s;
+  transition: background 0.2s, box-shadow 0.3s;
 
   &:hover {
+    background: #0534b5;
     box-shadow: var(--shadow);
   }
 }
@@ -212,18 +213,18 @@
     flex: 1;
     padding: 4px 8px;
     border-radius: 4px;
-    border: 1px solid var(--border);
-    background: var(--accent-bg);
-    color: inherit;
+    border: 1.5px solid #1d5cba;
+    background: #fff;
+    color: #0d1b2a;
   }
 
   textarea {
     flex: 1;
     padding: 4px 8px;
     border-radius: 4px;
-    border: 1px solid var(--border);
-    background: var(--accent-bg);
-    color: inherit;
+    border: 1.5px solid #1d5cba;
+    background: #fff;
+    color: #0d1b2a;
     resize: vertical;
     font: inherit;
   }
