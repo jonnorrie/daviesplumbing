@@ -2,25 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import DPLogo from './assets/logo.png'
+import SmallDPLogo from './assets/small_logo.png'
 import './App.css'
 
 function App() {
 
+  function handleQuoteSubmit(event) {
+    event.preventDefault()
+    console.log("info submitted")
+  }
+
   return (
     <>
       <header id="banner">
-        <span>Davies Plumbing</span>
+        <img src={DPLogo} width="200"alt="" />
         <span>Call: (416) 580-6934</span>
       </header>
 
       <section id="center">
-        <div>
-          <h1>Davies Plumbing</h1>
-        </div>
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+          <img src={DPLogo} width="600" alt="" />
+          {/*<img src={reactLogo} className="framework" alt="React logo" />
+          <img src={viteLogo} className="vite" alt="Vite logo" />*/}
         </div>
       </section>
 
@@ -64,7 +68,9 @@ function App() {
               <textarea rows={4}></textarea>
             </div>
           </div>
-          <div id="quote-submit"><button>Submit</button></div>
+          <div id="quote-submit">
+            <button onClick={handleQuoteSubmit}>Submit</button>
+          </div>
         </div>
 
       </section>
